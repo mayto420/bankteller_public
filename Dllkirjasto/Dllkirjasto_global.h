@@ -1,0 +1,12 @@
+#ifndef DLLKIRJASTO_GLOBAL_H
+#define DLLKIRJASTO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DLLKIRJASTO_LIBRARY)
+#define DLLKIRJASTO_EXPORT Q_DECL_EXPORT
+#else
+#define DLLKIRJASTO_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DLLKIRJASTO_GLOBAL_H

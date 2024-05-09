@@ -1,0 +1,2 @@
+create user bank@'localhost' identified by 'bankpass';
+grant all on pankkiautomaatti.* to bank@'localhost';
